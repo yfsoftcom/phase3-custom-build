@@ -18,6 +18,15 @@ var Phaser = {
     Cameras: { Scene2D: require('cameras/2d') },
     Events: require('events/index'),
     Game: require('core/Game'),
+    Input: {
+        Touch: require('input/touch'),
+        // CreatePixelPerfectHandler: require('input/CreatePixelPerfectHandler'),
+        // CreateInteractiveObject: require('input/CreateInteractiveObject'),
+        Events: require('input/events'),
+        InputManager: require('input/InputManager'),
+        InputPlugin: require('input/InputPlugin'),
+        Pointer: require('input/Pointer'),
+    },
     GameObjects: {
         DisplayList: require('gameobjects/DisplayList'),
         GameObjectCreator: require('gameobjects/GameObjectCreator'),
@@ -36,8 +45,8 @@ var Phaser = {
         // FileTypesManager: require('loader/FileTypesManager'),
         // GetURL: require('loader/GetURL'),
         LoaderPlugin: require('loader/LoaderPlugin'),
-        // MultiFile: require('loader/MultiFile'),
-
+        MultiFile: require('loader/MultiFile'),
+        AtlasJSONFile: require('loader/filetypes/AtlasJSONFile'),
         ImageFile: require('loader/filetypes/ImageFile'),
         TilemapJSONFile: require('loader/filetypes/TilemapJSONFile'),
     },
